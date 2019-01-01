@@ -1,0 +1,24 @@
+{
+  "name": "upnqr",
+  "version": "1.0.0",
+  "description": "Univerzalni plačilni nalog. Obrazec UPN QR",
+  "author": "Matjaz Lipus",
+  "license": "ISC",
+  "main": "lib/upnqr.js",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [
+    "upn",
+    "qr",
+    "upnqr",
+    "zbs",
+    "slovenia"
+  ],
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
