@@ -1,5 +1,7 @@
 # UPN QR
 
+[![NPM][npm-image]][npm-url]
+
 Encode and decode [UPN QR](https://upn-qr.si/).
 
 ## Encode QR code data
@@ -35,3 +37,9 @@ var upn = decode(QR_code_string) // returns similar object as passed in encode a
 console.log(upn) 
 console.log(upn.rok_placila.toJSON())
 ```
+
+## License
+ISC
+
+[npm-image]: https://img.shields.io/npm/v/upnqr.svg
+[npm-url]: https://www.npmjs.com/package/upnqr
