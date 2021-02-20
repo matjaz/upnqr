@@ -4,6 +4,11 @@
 
 Encode and decode [UPN QR](https://upn-qr.si/).
 
+## Installation
+```shell
+npm i upnqr --save
+```
+
 ## Encode QR code data
 
 ```js
