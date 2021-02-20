@@ -1,4 +1,4 @@
-const encode = require('upnqr').encode
+const { encode } = require('upnqr')
 
 const upn = {
   polog: false,
@@ -20,5 +20,4 @@ const upn = {
 }
 
 const code = encode(upn)
-
 console.log(code)
