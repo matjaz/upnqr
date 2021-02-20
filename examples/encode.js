@@ -1,7 +1,6 @@
 const { encode } = require('upnqr')
 
 const upn = {
-  slog: 'UPNQR',
   polog: false,
   dvig: false,
   ime_placnika: 'Janez Novak',
