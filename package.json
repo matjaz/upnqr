@@ -16,8 +16,7 @@
     "lib/*"
   ],
   "scripts": {
-    "test": "mocha test",
-    "lint": "npx standard"
+    "test": "standard && mocha"
   },
   "keywords": [
     "upn",
