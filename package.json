@@ -1,9 +1,13 @@
 {
   "name": "upnqr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Univerzalni plačilni nalog. Obrazec UPN QR",
   "author": "Matjaz Lipus",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matjaz/upnqr.git"
+  },
   "main": "lib/upnqr.js",
   "files": [
     "lib/*"
@@ -19,6 +23,6 @@
     "slovenia"
   ],
   "devDependencies": {
-    "standard": "^14.3.1"
+    "standard": "^16.0.3"
   }
 }
