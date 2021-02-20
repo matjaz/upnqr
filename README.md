@@ -5,14 +5,14 @@
 Encode and decode [UPN QR](https://upn-qr.si/).
 
 ## Installation
-```shell
-npm i upnqr --save
+```zsh
+$ npm i upnqr --save
 ```
 
 ## Encode QR code data
 
 ```js
-const {encode} = require('upnqr')
+const { encode } = require('upnqr')
 const result = encode({
   slog: 'UPNQR',
   polog: false,
@@ -38,7 +38,7 @@ console.log(result)
 ## Decode QR code data
 
 ```js
-const {decode} = require('upnqr')
+const { decode } = require('upnqr')
 const upn = decode(QR_code_string) // returns similar object as passed in encode above
 console.log(upn)
 console.log(upn.rok_placila.toJSON())
