@@ -1,4 +1,4 @@
-const {encode} = require('../lib/upnqr');
+const { encode } = require('upnqr')
 
 const upn = {
   slog: 'UPNQR',
@@ -18,7 +18,7 @@ const upn = {
   ulica_prejemnika: 'Povšetova ulica 6',
   kraj_prejemnika: '1000 Ljubljana',
   rezerva: 'dodatek do skupaj 411 znakov'
-};
+}
 
-const code = encode(upn);
-console.log(code);
+const code = encode(upn)
+console.log(code)

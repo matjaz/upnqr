@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "test": "mocha test",
-    "standard": "standard"
+    "lint": "npx standard"
   },
   "keywords": [
     "upn",
