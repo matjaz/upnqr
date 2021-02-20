@@ -7,7 +7,7 @@ Encode and decode [UPN QR](https://upn-qr.si/).
 ## Encode QR code data
 
 ```js
-const {encode} = require('upnqr');
+const {encode} = require('upnqr')
 const result = encode({
   slog: 'UPNQR',
   polog: false,
@@ -26,17 +26,17 @@ const result = encode({
   ulica_prejemnika: 'Povšetova ulica 6',
   kraj_prejemnika: '1000 Ljubljana',
   rezerva: 'dodatek do skupaj 411 znakov'
-});
-console.log(result);
+})
+console.log(result)
 ```
 
 ## Decode QR code data
 
 ```js
-const {decode} = require('upnqr');
-const upn = decode(QR_code_string); // returns similar object as passed in encode above
-console.log(upn);
-console.log(upn.rok_placila.toJSON());
+const {decode} = require('upnqr')
+const upn = decode(QR_code_string) // returns similar object as passed in encode above
+console.log(upn)
+console.log(upn.rok_placila.toJSON())
 ```
 
 ## License
