@@ -1,4 +1,4 @@
-const { encode, decode } = require('./lib/upnqr')
+const { encode, decode } = require('../lib/upnqr')
 const assert = require('assert')
 const describe = require('mocha').describe
 const it = require('mocha').it
