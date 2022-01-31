@@ -14,13 +14,12 @@ $ npm i upnqr --save
 ```js
 const { encode } = require('upnqr')
 const result = encode({
-  slog: 'UPNQR',
   polog: false,
   dvig: false,
   ime_placnika: 'Janez Novak',
   ulica_placnika: 'Lepa cesta 10',
   kraj_placnika: '2000 Maribor',
-  znesek: 14.712,
+  znesek: 13.37,
   nujno: true,
   koda_namena: 'SCVE',
   namen_placila: 'Ravn. z odpadki 04/2016 0040098579',
