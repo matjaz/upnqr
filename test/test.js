@@ -1,7 +1,6 @@
 const { encode, decode } = require('../lib/upnqr')
 const assert = require('assert')
-const describe = require('mocha').describe
-const it = require('mocha').it
+const { describe, it } = require('mocha')
 
 const upn = `UPNQR
 
@@ -23,11 +22,14 @@ SPL d.d.
 Frankopanska ul. 18a
 1000 LJUBLJANA
 205
+rezerva
 `
 
 describe('Test encoding and decoding', () => {
   it('encoded value and original UPN code should be identical', () => {
-    const encoded = encode(decode(upn))
-    assert.strictEqual(encoded, upn)
+    const decoded = decode(upn)
+    delete decoded.slog
+    const encoded = encode(decoded)
+    assert.strictEqual(encoded, upn.trim())
   })
 })
