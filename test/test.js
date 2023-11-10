@@ -1,4 +1,5 @@
 const { encode, decode } = require('../lib/upnqr')
+const { formatAmount } = require('../lib/util')
 const assert = require('assert')
 const { describe, it } = require('mocha')
 
@@ -31,5 +32,12 @@ describe('Test encoding and decoding', () => {
     delete decoded.slog
     const encoded = encode(decoded)
     assert.strictEqual(encoded, upn.trim())
+  })
+})
+
+describe('util tests', () => {
+  it('it should format amount', () => {
+    const formatted = formatAmount(4.6)
+    assert.strictEqual(formatted, '00000000460')
   })
 })
